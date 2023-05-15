@@ -1,0 +1,54 @@
+Laravel Installation and Folder Structure Assignment:
+
+Part 1: Laravel Installation
+
+First Step: Install Composer
+To install the latest version of Laravel, you can download Composer .
+
+Using Composer:
+1. Make sure you have Composer installed on your system. If not, you can download and install it from https://getcomposer.org/.
+then:
+Run the following command to create a new Laravel project:
+
+   "composer create-project laravel/laravel example-app"
+ 
+   Then Next: (cd example-app)
+
+
+Step 2: Verify Laravel Installation
+
+After the installation is complete, you can verify that Laravel is installed correctly by following these steps:
+
+1. Terminal command:
+
+   "php artisan serve"
+
+3. Open a web browser and enter the URL displayed in the command output, typically "http://localhost:8000".
+4.  Take a screenshot of the running server.
+
+==================================================================
+Part 2: Laravel Folder Structure
+
+In a Laravel project, the folders serve different purposes. Here's a brief description of each folder:
+
+1. app: This folder contains the core application code, including models, controllers, and other PHP classes specific to your application's business logic.
+
+2. bootstrap: This folder contains the files responsible for bootstrapping the Laravel application, such as the `app.php` file that loads the necessary dependencies and prepares the environment.
+
+3. config: This folder contains configuration files for various Laravel components and services. You can define settings for the database, mail, caching, and more in these files.
+
+4. database: This folder contains database-related files, including migrations to manage database schema changes, seeders to populate the database with initial data, and factories to generate dummy data for testing.
+
+5. public: This folder is the web server's document root and contains the entry point for your Laravel application (`index.php`). The public folder should be the only one accessible from the internet, ensuring that sensitive application code remains secure.
+
+6. resources: This folder contains non-PHP resources, such as views, assets (CSS, JavaScript), and language files. Views define the HTML structure of your application, while assets provide styles and scripts.
+
+7. routes: This folder contains route definition files that specify how HTTP requests should be handled. Routes define the URLs and corresponding actions (controllers or closures) for your application
+
+
+Create a new route in your Laravel project that displays a simple "Hello, World!" message. Take a screenshot of the running route.
+1.Open the web.php file.
+
+"Route::get('/hello', function () {
+    return 'Hello, World!';
+});"
